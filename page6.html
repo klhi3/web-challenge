@@ -7,22 +7,82 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-   
-    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.3/jquery.csv.min.js"></script>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+
+    <!-- my files -->
+    <link rel="stylesheet" href="style.css">   
+    <script rel="javascript" src="jt1.js"></script>
 </head>
 
 <body>
 
-<h1>"What's the weather like as we approach the equator?"
-</h1>
 
-<h2>
-to visualize the weather of 500+ cities across the world of varying distance from the equator.
-</h2>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light pt-0 pb-0"> <!--justify-content-around -->
 
+            <p><pre>          </pre></p>
+            <a class="navbar-brand h1x text-white" href="#">Lattitude</a>
+  
+           <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> 
+            </button> 
+  
+  
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+  
+              <ul class="navbar-nav mr-auto">  
+  
+                <li class="nav-item dropdown">
+                  <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item"  href="Page1.html">Max Temperature</a>
+                    <a class="dropdown-item"  href="Page2.html">Humidity</a>
+                    <a class="dropdown-item"  href="Page3.html">Cloudiness</a>
+                    <a class="dropdown-item"  href="Page4.html">Wind Speed</a>
+                  </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Page5.html">Comparison</a> <!--<span class="sr-only">(current)</span>-->
+                  </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link active" href="Page6.html">Data</a> <!-- nav-link disabled  tabindex="-1" aria-disabled="true"-->
+                </li>
+              </ul>
+         </div>
+  
+          </nav>
+  
+  
+  <div class="container-fluid px-5 py-5 justify-content-around">
+    <div class="page-header" id="banner">
+    <p></p>
+      <div class="row-full "> <!--  align-items-center justify-content-around -->
+   
+           <div class="card " >  <!--style="width: 30%"; 18rem; -->
+              <div class="card-body">
+                 <h2 class="card-title px-5 pt-5 h2x">Data</h2>
+  
+                 <p class="px-5 pt-2">The following table includes all of the data used for plotting during the project.</p>
+                                     
+                        <object type="text/html" data="data_table.html" width="100%"></object>
+              </div>
+          </div>
+      </div>
+  
+    </div>
+  </div>
+  
 
-</body>
-
+  
+    <footer>
+       <p>&copy; Copyright klhi3 2019</p>
+    </footer>
 
 
 </html>

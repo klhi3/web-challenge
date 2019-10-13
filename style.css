@@ -1,16 +1,142 @@
+/**xs (phones), sm (tablets), md (desktops), and lg (larger desktops)**/
+
 
 body {
     background: #eee;
     color: #444;
     -webkit-font-smoothing: antialiased;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 300;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     font-weight: 400;
     height: auto !important;
-    height: 100%;
+  /**  height: 100%;  **/
     min-height: 100%;
     text-rendering: optimizeLegibility;
 }
+/**
+margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+**/
+
+header {
+    /** color: white;  **/
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+
+    grid-area: header;
+}
+
+
+
+/* Style the footer */
+footer {
+    background-color: #777;  /**rgb(124, 124, 124);**/
+    /** padding: 6px; **/
+    height: 60px;
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    bottom: 0;
+    width: 100%;
+    position: inline;
+
+
+    border-top: 10px solid rgb(12,173,167);
+    justify-content: center;
+    padding: 1em;
+
+    grid-area: footer;
+  }
+
+
+H1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(12, 173, 167);
+}
+
+p {
+    line-height: 2;
+}
+
+.navbar{
+  border-bottom-color: #777;
+}
+
+.navbar-nav{
+    width: 100%;
+    text-align: right;
+  }
+
+  
+
+.navbar-brand {
+    color: white;
+}
+
+.h1x{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    background: rgb(12, 173, 167);
+    padding: 12px;
+}
+
+.h2x{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(12, 173, 167);
+    padding: 12px;
+}
+
+.h3x{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: rgb(12, 173, 167);
+    padding: 12px;
+}
+
+.h4x{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(12, 173, 167);
+    padding: 12px;
+}
+
+.wh-440{
+    width:440px;
+    height:320px;
+}
+.wh-220{
+    width:220px;
+    height:220px;
+}
+.wh-140{
+    width:140px;
+    height:140px;
+}
+
+
+.nav-link:hover{
+ background-color:  #eee;
+}
+
+
+
 
 
 /**Header**/
@@ -24,22 +150,16 @@ body {
     position: relative;
 }
 
-.header {
-    grid-area: header;
-}
 
-.footer {
-    grid-area: footer;
-}
 
 
 .wrapper {
     display: grid;
-grid-gap: 10px;
-    grid-template-columns: 200px 200px 200px;
+    grid-gap: 10px;
+    /**grid-template-columns: 200px 200px 200px;**/
     grid-template-areas:
-"header  header  header"
-    "sidebar content content"
+    "header  header  header"
+    "content content content"
     "footer  footer  footer";
     background-color: #fff;
     color: #444;
@@ -47,16 +167,38 @@ grid-gap: 10px;
 
 .box {
     background-color: #444;
-    color: #fff;
+    color: rgb(41, 40, 40);
     border-radius: 5px;
     padding: 50px;
     font-size: 150%;
 
+    /**
+        min-height: 50px;
+        padding: 5px;
+        margin: 5px;
+        font-weight: 800;
+        color: #fff;
+    **/
+
 }
 
-.header, .footer {
-    background-color: #999;
+.white {
+    background: white;
 }
+
+.grey {
+    background: rgb(237,237,237) 
+}
+
+.verde {
+    background: rgb(12, 173, 167);
+}
+
+.header {
+    background-color: white;
+    color: rgb(12, 173, 167);
+}
+
 
 .topleft {
     position: absolute;

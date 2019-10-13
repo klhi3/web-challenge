@@ -9,20 +9,101 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
    
     <link rel="stylesheet" href="style.css">
-</head>
+  </head> 
+    
+   <body> 
 
-<body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light pt-0 pb-0"> <!--justify-content-around -->
 
-<h1>"What's the weather like as we approach the equator?"
-</h1>
+          <p><pre>          </pre></p>
+          <a class="navbar-brand h1x text-white" href="#">Lattitude</a>
 
-<h2>
-to visualize the weather of 500+ cities across the world of varying distance from the equator.
-</h2>
-
-
-</body>
-
+         <button class="navbar-toggler" type="button" data-toggle="collapse" 
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span> 
+          </button> 
 
 
-</html>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+
+            <ul class="navbar-nav mr-auto">  
+
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item"  href="Page1.html">Max Temperature</a>
+                  <a class="dropdown-item"  href="Page2.html">Humidity</a>
+                  <a class="dropdown-item"  href="Page3.html">Cloudiness</a>
+                  <a class="dropdown-item"  href="Page4.html">Wind Speed</a>
+                </div>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="Page5.html">Comparison</a> <!--<span class="sr-only">(current)</span>-->
+                </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="Page6.html">Data</a> <!-- nav-link disabled  tabindex="-1" aria-disabled="true"-->
+              </li>
+            </ul>
+       </div>
+
+        </nav>
+
+
+<div class="container-fluid px-5 py-5">
+  <div class="page-header" id="banner">
+  <p></p>
+    <div class="row"> <!--  align-items-center justify-content-around -->
+      <div class="col-lg-8 col-md-5 col-sm-6">     
+          <div class="card px-3 pb-3 pt-3">  <!--style="width: 60%;"  18rem; -->
+              <div class="card-body">
+                <h2 class="card-title h2x">Summary: Latitude vs Cloudiness</h2>
+                <p><pre></pre></p>
+                <a href="Resources/assets/images/Fig3.png">
+                <img src="Resources/assets/images/Fig3.png" class="rounded float-left wh-220 p-3" alt="Latitude vs Temperature"></img></a>
+                <p class="card-text mb-4 p-2">The propose of this project was to analyze how weather changes as you get closer to the equator.
+                  To accomplish this analysis, we fisrt pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                <p></p>
+                <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude. 
+                  Factor was looked at included: temperature, cloudiness, wind speed, and humidity. This site provides 
+                  the source data and visualizations created as part of the analysis, as well as explanations and descriptions of 
+                  any trends and correlations witnessed.
+                </p>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-5 col-sm-6">
+          <div class="card  px-3 py-3" >  <!--style="width: 30%"; 18rem; -->
+            <div class="card-body">
+               <h2 class="card-title h3x">Visualization</h2>
+               <p><pre></pre></p>
+                 <div class="container-fluid">
+                    <div class="row justify-content-center">
+                      <div class="col"><a href="Page1.html"><img src="Resources/assets/images/Fig1.png" title="Max Temperature" class="rounded float-left wh-140" alt="Latitude vs Temperature"></img></a></div>
+                      <div class="col"><a href="Page2.html"><img src="Resources/assets/images/Fig2.png" title="Humidity" class="rounded float-left wh-140" alt="Latitude vs Humidity"></img></a></div>
+                      <div class="w-100"></div>
+                      <div class="col"><a href="Page3.html"><img src="Resources/assets/images/Fig3.png" title="Cloudiness" class="rounded float-left wh-140" alt="Latitude vs Cloudiness"></img></a></div>
+                      <div class="col"><a href="Page4.html"><img src="Resources/assets/images/Fig4.png" title="Wind Speed" class="rounded float-left wh-140" alt="Latitude vs Wind Speed"></img></a></div>
+                    </div> 
+                  </div> 
+            </div>
+          </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+  <footer>
+     <p>&copy; Copyright klhi3 2019</p>
+  </footer>
+
+  </body>
+  </html>
